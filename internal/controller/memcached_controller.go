@@ -1,5 +1,5 @@
 /*
-Copyright 2024.
+Copyright 2023.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -40,7 +40,7 @@ import (
 	cachev1alpha1 "github.com/chris-vest/memcached-operator/api/v1alpha1"
 )
 
-const memcachedFinalizer = "cache.chrisve.st/finalizer"
+const memcachedFinalizer = "cache.chrisve.st.com/finalizer"
 
 // Definitions to manage status conditions
 const (
@@ -61,9 +61,9 @@ type MemcachedReconciler struct {
 // when the command <make manifests> is executed.
 // To know more about markers see: https://book.kubebuilder.io/reference/markers.html
 
-//+kubebuilder:rbac:groups=cache.chrisve.st,resources=memcacheds,verbs=get;list;watch;create;update;patch;delete
-//+kubebuilder:rbac:groups=cache.chrisve.st,resources=memcacheds/status,verbs=get;update;patch
-//+kubebuilder:rbac:groups=cache.chrisve.st,resources=memcacheds/finalizers,verbs=update
+//+kubebuilder:rbac:groups=cache.chrisve.st.com,resources=memcacheds,verbs=get;list;watch;create;update;patch;delete
+//+kubebuilder:rbac:groups=cache.chrisve.st.com,resources=memcacheds/status,verbs=get;update;patch
+//+kubebuilder:rbac:groups=cache.chrisve.st.com,resources=memcacheds/finalizers,verbs=update
 //+kubebuilder:rbac:groups=core,resources=events,verbs=create;patch
 //+kubebuilder:rbac:groups=apps,resources=deployments,verbs=get;list;watch;create;update;patch;delete
 //+kubebuilder:rbac:groups=core,resources=pods,verbs=get;list;watch

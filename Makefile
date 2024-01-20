@@ -28,8 +28,8 @@ BUNDLE_METADATA_OPTS ?= $(BUNDLE_CHANNELS) $(BUNDLE_DEFAULT_CHANNEL)
 # This variable is used to construct full image tags for bundle and catalog images.
 #
 # For example, running 'make bundle-build bundle-push catalog-build catalog-push' will build and push both
-# chris-ve.st/memcached-operator-bundle:$VERSION and chris-ve.st/memcached-operator-catalog:$VERSION.
-IMAGE_TAG_BASE ?= chris-ve.st/memcached-operator
+# chris-vest/memcached-operator-bundle:$VERSION and chris-vest/memcached-operator-catalog:$VERSION.
+IMAGE_TAG_BASE ?= chris-vest/memcached-operator
 
 # BUNDLE_IMG defines the image:tag used for the bundle.
 # You can use it as an arg. (E.g make bundle-build BUNDLE_IMG=<some-registry>/<project-name-bundle>:<tag>)

@@ -17,7 +17,7 @@ rules:
   - update
   - watch
 - apiGroups:
-  - cache.chrisve.st
+  - cache.chrisve.st.com
   resources:
   - memcacheds
   verbs:
@@ -29,13 +29,13 @@ rules:
   - update
   - watch
 - apiGroups:
-  - cache.chrisve.st
+  - cache.chrisve.st.com
   resources:
   - memcacheds/finalizers
   verbs:
   - update
 - apiGroups:
-  - cache.chrisve.st
+  - cache.chrisve.st.com
   resources:
   - memcacheds/status
   verbs:
