@@ -5,7 +5,19 @@ metadata:
   name: manager-role
 rules:
 - apiGroups:
-  - cache.example.com
+  - apps
+  resources:
+  - deployments
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - cache.chrisve.st
   resources:
   - memcacheds
   verbs:
@@ -17,16 +29,31 @@ rules:
   - update
   - watch
 - apiGroups:
-  - cache.example.com
+  - cache.chrisve.st
   resources:
   - memcacheds/finalizers
   verbs:
   - update
 - apiGroups:
-  - cache.example.com
+  - cache.chrisve.st
   resources:
   - memcacheds/status
   verbs:
   - get
   - patch
   - update
+- apiGroups:
+  - ""
+  resources:
+  - events
+  verbs:
+  - create
+  - patch
+- apiGroups:
+  - ""
+  resources:
+  - pods
+  verbs:
+  - get
+  - list
+  - watch

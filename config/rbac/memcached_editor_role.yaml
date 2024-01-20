@@ -12,7 +12,7 @@ metadata:
   name: memcached-editor-role
 rules:
 - apiGroups:
-  - cache.example.com
+  - cache.chris-ve.st
   resources:
   - memcacheds
   verbs:
@@ -24,7 +24,7 @@ rules:
   - update
   - watch
 - apiGroups:
-  - cache.example.com
+  - cache.chris-ve.st
   resources:
   - memcacheds/status
   verbs:

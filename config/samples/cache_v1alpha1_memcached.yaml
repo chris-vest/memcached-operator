@@ -1,4 +1,4 @@
-apiVersion: cache.example.com/v1alpha1
+apiVersion: cache.chris-ve.st/v1alpha1
 kind: Memcached
 metadata:
   labels:
